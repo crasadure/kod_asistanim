@@ -1,0 +1,37 @@
+# Projenin Adı: Kod-Asistan v0.1
+
+**Proje Yazarı:** M. Tayfun Akkoyun
+
+---
+
+## Projenin Amacı
+Kullanıcılara günlük işlerinde (hesaplama, selamlama, veri işleme vb.) yardımcı olacak modüler ve sürdürülebilir bir dijital asistan tasarlamaktır.
+
+---
+
+## Projenin Hedefleri
+* **v0.1:** Sözde kod ve akış şeması tasarımlarının oluşturulması, temel selamlama ve sınır denetimi modüllerinin kurgulanması.
+* **v1.0:** Kullanıcı seçimlerine göre farklı modülleri tetikleyen Akıllı Menü Sistemi ve döngüsel kontrol mekanizmaları.
+* **v2.0:** Kullanıcı tercihlerini ve geçmiş işlemlerini saklayan Veri Depolama (JSON/Sözlük) yapısının entegrasyonu.
+
+---
+
+## Proje Kapsamı ve Algoritma Mantığı (Kritik Eşik Modülü)
+
+Sistemde yer alan sınır denetimli baraj otomasyonu mantığına ait sözde kod aşağıda modellenmiştir:
+
+```text
+1. BAŞLA
+2. saat = 1
+3. DÖNGÜ BAŞI: Sensörden 'su_seviyesi' değerini oku
+4. EĞER su_seviyesi > 50 İSE GİT Adım 8  (Kritik eşik kontrolü / Döngüyü kırma)
+5. YAZ "Kapaklar Kapalı. Su Seviyesi Normal: ", su_seviyesi
+6. saat = saat + 1
+7. GİT Adım 3  (Sonraki saat ölçümü için döngüye devam et)
+8. YAZ "KRİTİK EŞİK AŞILDI! KAPAKLAR AÇILIYOR."
+9. YAZ "Tahliye Saati: ", saat, " | Kritik Su Seviyesi: ", su_seviyesi, " m"
+10. BİTİR
+```
+## Kaynakça
+* MEB Bilişim Teknolojileri Alanı, Programlama Temelleri Ders Kitabı (9. Sınıf), Algoritmik Düşünme ve Tasarım Öğrenme Birimi, Ankara.
+* Türkiye Yüzyılı Maarif Modeli (TYMM) Öğretim Programı Standartları.
